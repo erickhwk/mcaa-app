@@ -6,9 +6,9 @@
     </div> 
     <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
       <% members.each do |member| %>
-        <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+        <div class="items-center bg-gray-50 rounded-lg shadow flex dark:bg-gray-800 dark:border-gray-700">
           <a href="#" class="flex-none h-full w-44">
-            <img class="rounded-lg sm:rounded-none sm:rounded-l-lg h-full object-cover" src="<%= member[:img_path] %>" alt="Bonnie Avatar">
+            <img class="rounded-lg sm:rounded-none sm:rounded-l-lg h-full object-cover sm:w-full" src="<%= member[:img_path] %>" alt="Bonnie Avatar">
           </a>
           <div class="p-5">
             <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
