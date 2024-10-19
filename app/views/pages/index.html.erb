@@ -1,19 +1,49 @@
-<%= render partial: 'pages/index/banner' %>
+<%= render partial: 'pages/index/banner', locals: {
+  title: 'Administração Judicial',
+  subtitle: 'Somos especialistas em Reestruturação de empresas, melhoria de resultados e Recuperação Judicial.',
+  button_text_1: { name: 'Consultar Processos', path: '#' },
+  button_text_2: { name: 'Fale Conosco', path: '#' },
+  img_path: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png'
+} %>
 
-<%= render partial: 'pages/index/about' %>
+<%= render partial: 'pages/index/about', locals: {
+  img_path_1: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png',
+  img_path_2: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png',
+  title: 'Sobre Nós',
+  description: 'Com mais de vinte anos de atuação, o escritório de advocacia Matuch de Carvalho Advogados Associados foi fundado pelo advogado Julio Matuch de Carvalho, formado pela Universidade do Estado do Rio de Janeiro – UERJ na turma de 1998 e advogado militante desde 1º de março de 1999, e foi consolidado com o ingresso no quadro de sócios por seu irmão, Murilo Matuch de Carvalho, no ano de 2006. Desde então, a Banca presta serviços de advocacia nas áreas de Contencioso Cível e Administrativo, Consultoria em Direito Civil, Direito Administrativo e Direito de Empresa e Administração Judicial, em que se destaca no auxílio de diversos Juízos do Estado do Rio de Janeiro.'
+} %>
 
 <%= render partial: 'pages/index/services', locals: {
   title: 'Áreas de Atuação',
   subtitle: 'Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.',
   services: [
-    { title: 'Administração Judicial', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>' },
-    { title: 'Áreas de Atuação', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>' },
-    { title: 'Documentação', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>' },
-    { title: 'Contato', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>' }
+    { title: 'Administração Judicial', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>' },
+    { title: 'Áreas de Atuação', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>' },
+    { title: 'Documentação', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>' },
+    { title: 'Contato', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Donec nec nisl nec urna.', img_path: '<path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>' }
   ]
 }
 %>
 
-<%= render partial: 'pages/index/team' %>
+<%= render partial: 'pages/index/team', locals: {
+  title: 'Nossa Equipe',
+  subtitle: 'Conheça os profissionais que fazem parte do nosso time.',
+  members: [
+    { name: 'Julio Matuch de Carvalho', role: 'Advogado', img_path: 'https://i.pravatar.cc/300', description: 'Jese drives the technics ldfdsjfdskfjsdkf ksjdfkjsdf kjsal strategy of the flowbite platform and brand.' },
+    { name: 'Murilo Matuch de Carvalho', role: 'Advogado', img_path: 'https://i.pravatar.cc/300', description: 'Jese drives the technical strategy of the flowbite platform and brand.' },
+    { name: 'Fulano de Tal', role: 'Advogado', img_path: 'https://i.pravatar.cc/300', description: 'Jese drives the technical strategy of the flowbifdsjnkfdshgfsigte platform and brand.' },
+    { name: 'Ciclano de Tal', role: 'Advogado', img_path: 'https://i.pravatar.cc/300', description: 'Jese drives the technical strategy fsdkfjksdfof the flowbite platform and brand.' }
+  ]
+} %>
 
-<%= render partial: 'pages/index/contact' %>
+<%= render partial: 'pages/index/contact', locals: {
+  title: 'Fale Conosco',
+  subtitle: 'Entre em contato conosco para mais informações sobre nossos serviços.',
+  email_label: 'Seu e-mail',
+  email_placeholder: 'Digite seu e-mail',
+  subject_label: 'Assunto',
+  subject_placeholder: 'Digite o assunto',
+  message_label: 'Sua mensagem',
+  message_placeholder: 'Digite sua mensagem',
+  button_text: 'Enviar'
+} %>
