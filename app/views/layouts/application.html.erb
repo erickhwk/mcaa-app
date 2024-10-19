@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RubyRailsPostgres</title>
+    <title>MCAA::Matuch de Carvalho Advogados Associados</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-white dark:bg-gray-900">
+    <%= render partial: 'components/layout/navbar', locals: {
+      nav_links: [
+        { name: 'Sobre nós', path:  '#about' },
+        { name: 'Administração Judicial', path:  '#' },
+        { name: 'Áreas de Atuação', path:  '#' },
+        { name: 'Documentação', path:  '#' },
+        { name: 'Contato', path:  '#' },
+      ],
+      logo: {img_path: 'https://flowbite.com/docs/images/logo.svg', alt: 'Flowbite logo'},
+      login: { name: 'Acessar Área Restrita', path: '#' },
+    } %>
+
+    <main class="container mx-auto mt-28 px-5">
+      <%= yield %>
+    </main>
+    <%= render partial: 'components/layout/footer' %>
   </body>
 </html>
