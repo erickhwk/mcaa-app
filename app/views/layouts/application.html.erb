@@ -15,7 +15,7 @@
     <%= render partial: 'components/layout/navbar', locals: {
       nav_links: [
         { name: 'Sobre nós', path:  '#about' },
-        { name: 'Administração Judicial', path:  '#' },
+        { name: 'Administração Judicial', path:  judicial_recovery_path },
         { name: 'Áreas de Atuação', path:  '#' },
         { name: 'Documentação', path:  '#' },
         { name: 'Contato', path:  '#' },
@@ -24,7 +24,7 @@
       login: { name: 'Acessar Área Restrita', path: '#' },
     } %>
 
-    <main class="container mx-auto mt-28 px-5">
+    <main class="container mx-auto mt-28 px-5 mb-20">
       <%= yield %>
     </main>
     <%= render partial: 'components/layout/footer' %>

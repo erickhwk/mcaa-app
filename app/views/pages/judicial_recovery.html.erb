@@ -1,0 +1,21 @@
+<%= render partial: 'components/layout/page_header', locals: {
+  title: 'Administração Judicial',
+  subtitle: 'A Matuch de Carvalho Advogados Associados possui reconhecida expertise na gestão de falências, recuperações judiciais e consultoria jurídica. Confira abaixo nossa lista de clientes atendidos.'
+} %>
+
+<%= render partial: 'pages/judicial_recovery/lawsuits_table', locals: {
+   lawsuits: [
+    { type: 'Recuperação Judicial', companies: [
+        { name: 'Empresa 1', path: '#' },
+        { name: 'Empresa 2', path: '#' },
+        { name: 'Empresa 3', path: '#' }
+      ]
+    },
+    { type: 'Falência', companies: [
+        { name: 'Empresa 4', path: '#' },
+        { name: 'Empresa 5', path: '#' },
+        { name: 'Empresa 6', path: '#' }
+      ]
+    }
+  ]
+} %>

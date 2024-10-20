@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  get 'pages/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'administracao_judicial', to: 'pages#judicial_recovery', as: 'judicial_recovery'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
