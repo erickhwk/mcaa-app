@@ -14,11 +14,11 @@
   <body class="bg-white dark:bg-gray-900">
     <%= render partial: 'components/layout/navbar', locals: {
       nav_links: [
-        { name: 'Sobre nós', path:  '#about' },
+        { name: 'Sobre nós', path:  root_path(anchor:'about') },
         { name: 'Administração Judicial', path:  judicial_recovery_path },
-        { name: 'Áreas de Atuação', path:  '#' },
-        { name: 'Documentação', path:  '#' },
-        { name: 'Contato', path:  '#' },
+        { name: 'Áreas de Atuação', path:  root_path(anchor:'services') },
+        { name: 'Equipe', path: root_path(anchor:'team') },
+        { name: 'Contato', path:  root_path(anchor:'form') },
       ],
       logo: {img_path: 'https://flowbite.com/docs/images/logo.svg', alt: 'Flowbite logo'},
       login: { name: 'Acessar Área Restrita', path: '#' },
